@@ -1,0 +1,3 @@
+from wunderground_api import Weatherground
+w = Weatherground()
+w.populate_state_names_with_temp()

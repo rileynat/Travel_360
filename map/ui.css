@@ -1,0 +1,6 @@
+html { height: 100% }
+body { height: 50%; margin: 0; padding: 0 }
+#map-canvas { height: 100% }
+button{
+border-radius: 5px; 
+}

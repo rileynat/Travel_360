@@ -1,0 +1,972 @@
+(lp1
+(S'Cairo'
+p2
+S'Egypt'
+p3
+tp4
+a(S'Lagos'
+p5
+S'Nigeria'
+p6
+tp7
+a(S'Kinshasa'
+p8
+S'Democratic Republic of the Congo'
+p9
+tp10
+a(S'Johannesburg'
+p11
+S'South Africa'
+p12
+tp13
+a(S'Khartoum'
+p14
+S'Sudan'
+p15
+tp16
+a(S'Mogadishu'
+p17
+S'Somalia'
+p18
+tp19
+a(S'Alexandria'
+p20
+S'Egypt'
+p21
+tp22
+a(S'Abidjan'
+p23
+S'Ivory Coast'
+p24
+tp25
+a(S'Casablanca'
+p26
+S'Morocco'
+p27
+tp28
+a(S'Cape Town'
+p29
+S'South Africa'
+p30
+tp31
+a(S'Durban'
+p32
+S'South Africa'
+p33
+tp34
+a(S'Accra'
+p35
+S'Ghana'
+p36
+tp37
+a(S'Nairobi'
+p38
+S'Kenya'
+p39
+tp40
+a(S'Kano'
+p41
+S'Nigeria'
+p42
+tp43
+a(S'Ibadan'
+p44
+S'Nigeria'
+p45
+tp46
+a(S'Dar es Salaam'
+p47
+S'Tanzania'
+p48
+tp49
+a(S'Algiers'
+p50
+S'Algeria'
+p51
+tp52
+a(S'Addis Ababa'
+p53
+S'Ethiopia'
+p54
+tp55
+a(S'Luanda'
+p56
+S'Angola'
+p57
+tp58
+a(S'Dakar'
+p59
+S'Senegal'
+p60
+tp61
+a(S'Pretoria'
+p62
+S'South Africa'
+p63
+tp64
+a(S'Tripoli'
+p65
+S'Libya'
+p66
+tp67
+a(S'Harare'
+p68
+S'Zimbabwe'
+p69
+tp70
+a(S'Douala'
+p71
+S'Cameroon'
+p72
+tp73
+a(S'Hargeisa'
+p74
+S'Somaliland'
+p75
+tp76
+a(S'Abuja'
+p77
+S'Nigeria'
+p78
+tp79
+a(S'Kampala'
+p80
+S'Uganda'
+p81
+tp82
+a(S'Bamako'
+p83
+S'Mali'
+p84
+tp85
+a(S'Maputo'
+p86
+S'Mozambique'
+p87
+tp88
+a(S'Rabat'
+p89
+S'Morocco'
+p90
+tp91
+a(S'Antananarivo'
+p92
+S'Madagascar'
+p93
+tp94
+a(S'Lusaka'
+p95
+S'Zambia'
+p96
+tp97
+a(S'Yaound\xc3\xa9'
+p98
+S'Cameroon'
+p99
+tp100
+a(S'Ouagadougou'
+p101
+S'Burkina Faso'
+p102
+tp103
+a(S'Conakry'
+p104
+S'Guinea'
+p105
+tp106
+a(S'Kaduna'
+p107
+S'Nigeria'
+p108
+tp109
+a(S'Kumasi'
+p110
+S'Ghana'
+p111
+tp112
+a(S'Lubumbashi'
+p113
+S'Democratic Republic of the Congo'
+p114
+tp115
+a(S'Mbuji-Mayi'
+p116
+S'Democratic Republic of the Congo'
+p117
+tp118
+a(S'Brazzaville'
+p119
+S'Republic of the Congo'
+p120
+tp121
+a(S'Oran'
+p122
+S'Algeria'
+p123
+tp124
+a(S'Benin'
+p125
+S'Nigeria'
+p126
+tp127
+a(S'Nigeria'
+p128
+S'Port Harcourt'
+p129
+tp130
+a(S'Nigeria'
+p131
+S'Tunis'
+p132
+tp133
+a(S'Tunisia'
+p134
+S'Freetown'
+p135
+tp136
+a(S'Sierra Leone'
+p137
+S'Cotonou'
+p138
+tp139
+a(S'Benin'
+p140
+S'Vereeniging'
+p141
+tp142
+a(S'South Africa'
+p143
+S'F\xc3\xa8s'
+p144
+tp145
+a(S'Morocco'
+p146
+S'Maiduguri'
+p147
+tp148
+a(S'Nigeria'
+p149
+S'Monrovia'
+p150
+tp151
+a(S'Liberia'
+p152
+S'Port Elizabeth'
+p153
+tp154
+a(S'South Africa'
+p155
+S'Huambo'
+p156
+tp157
+a(S'Angola'
+p158
+S'Ogbomosho'
+p159
+tp160
+a(S'Nigeria'
+p161
+S'Zaria'
+p162
+tp163
+a(S'Nigeria'
+p164
+S'Ndjamena'
+p165
+tp166
+a(S'Chad'
+p167
+S'Greater Mexico City'
+p168
+tp169
+a(S'Mexico'
+p170
+S'Greater S\xc3\xa3o Paulo'
+p171
+tp172
+a(S'Brazil'
+p173
+S'New York metropolitan area'
+p174
+tp175
+a(S'United States'
+p176
+S'Greater Buenos Aires'
+p177
+tp178
+a(S'Argentina'
+p179
+S'Los Angeles metropolitan area'
+p180
+tp181
+a(S'United States'
+p182
+S'Greater Rio de Janeiro'
+p183
+tp184
+a(S'Brazil'
+p185
+S'Chicago metropolitan area'
+p186
+tp187
+a(S'United States'
+p188
+S'Lima Metropolitan Area'
+p189
+tp190
+a(S'Peru'
+p191
+S'Metropolitan Area of Bogot\xc3\xa1'
+p192
+tp193
+a(S'Colombia'
+p194
+S'Santiago'
+p195
+tp196
+a(S'Chile'
+p197
+S'Chile'
+p198
+tp199
+a(S'Greater Toronto and Hamilton Area'
+p200
+S'Canada'
+p201
+tp202
+a(S'Dallas/Fort Worth Metroplex'
+p203
+S'United States'
+p204
+tp205
+a(S'Greater Houston'
+p206
+S'United States'
+p207
+tp208
+a(S'Delaware Valley'
+p209
+S'United States'
+p210
+tp211
+a(S'Canada'
+p212
+S'United States'
+p213
+tp214
+a(S'Washington'
+p215
+S'D.C.'
+p216
+tp217
+a(S'United States'
+p218
+S'South Florida'
+p219
+tp220
+a(S'United States'
+p221
+S'Belo Horizonte'
+p222
+tp223
+a(S'Brazil'
+p224
+S'Atlanta Metropolitan Area'
+p225
+tp226
+a(S'United States'
+p227
+S'Mexico'
+p228
+tp229
+a(S'United States'
+p230
+S'Greater Boston'
+p231
+tp232
+a(S'United States'
+p233
+S'Guadalajara Metropolitan Area'
+p234
+tp235
+a(S'Mexico'
+p236
+S'San Francisco Bay Area'
+p237
+tp238
+a(S'United States'
+p239
+S'Inland Empire (California)'
+p240
+tp241
+a(S'United States'
+p242
+S'Phoenix Metropolitan Area'
+p243
+tp244
+a(S'United States'
+p245
+S'Guatemala City'
+p246
+tp247
+a(S'Guatemala'
+p248
+S'Monterrey Metropolitan area'
+p249
+tp250
+a(S'Mexico'
+p251
+S'Porto Alegre'
+p252
+tp253
+a(S'Brazil'
+p254
+S'Greater Montreal Area'
+p255
+tp256
+a(S'Canada'
+p257
+S'Recife'
+p258
+tp259
+a(S'Brazil'
+p260
+S'Salvador'
+p261
+tp262
+a(S'Bahia'
+p263
+S'Brazil'
+p264
+tp265
+a(S'Bras\xc3\xadlia'
+p266
+S'Brazil'
+p267
+tp268
+a(S'Seattle metropolitan area'
+p269
+S'United States'
+p270
+tp271
+a(S'Metropolitan Area of the Aburr\xc3\xa1 Valley'
+p272
+S'Colombia'
+p273
+tp274
+a(S'Fortaleza'
+p275
+S'Brazil'
+p276
+tp277
+a(S'Minneapolis\xe2\x80\x93Saint Paul'
+p278
+S'United States'
+p279
+tp280
+a(S'Greater Santo Domingo'
+p281
+S'Dominican Republic'
+p282
+tp283
+a(S'Curitiba'
+p284
+S'Brazil'
+p285
+tp286
+a(S'United States'
+p287
+S'Mexico'
+p288
+tp289
+a(S'Guatemala City'
+p290
+S'Guatemala'
+p291
+tp292
+a(S'Caracas'
+p293
+S'Venezuela'
+p294
+tp295
+a(S'Tampa Bay area'
+p296
+S'United States'
+p297
+tp298
+a(S'Greater St. Louis'
+p299
+S'United States'
+p300
+tp301
+a(S'Baltimore Metropolitan Area'
+p302
+S'United States'
+p303
+tp304
+a(S'Cali'
+p305
+S'Colombia'
+p306
+tp307
+a(S'Colombia'
+p308
+S'Guayaquil'
+p309
+tp310
+a(S'Ecuador'
+p311
+S'Metropolitan area of Puebla'
+p312
+tp313
+a(S'Mexico'
+p314
+S'Denver Metropolitan Area'
+p315
+tp316
+a(S'United States'
+p317
+S'Campinas'
+p318
+tp319
+a(S'Brazil'
+p320
+S'San Juan'
+p321
+tp322
+a(S'Puerto Rico'
+p323
+S'United States'
+p324
+tp325
+a(S'Greater Tokyo Area'
+p326
+S'Japan'
+p327
+tp328
+a(S'Jakarta'
+p329
+S'Indonesia'
+p330
+tp331
+a(S'Seoul National Capital Area'
+p332
+S'South Korea'
+p333
+tp334
+a(S'Delhi'
+p335
+S'India'
+p336
+tp337
+a(S'Mumbai metropolitan area'
+p338
+S'India'
+p339
+tp340
+a(S'Metro Manila'
+p341
+S'Philippines'
+p342
+tp343
+a(S'Shanghai'
+p344
+S'China'
+p345
+tp346
+a(S'Keihanshin'
+p347
+S'Japan'
+p348
+tp349
+a(S'Kolkata metropolitan area'
+p350
+S'India'
+p351
+tp352
+a(S'Karachi'
+p353
+S'Pakistan'
+p354
+tp355
+a(S'Guangzhou'
+p356
+S'China'
+p357
+tp358
+a(S'Dhaka'
+p359
+S'Bangladesh'
+p360
+tp361
+a(S'Shenzhen'
+p362
+S'China'
+p363
+tp364
+a(S'Tehran'
+p365
+S'Iran'
+p366
+tp367
+a(S'Beijing'
+p368
+S'China'
+p369
+tp370
+a(S'Bangkok Metropolitan Area'
+p371
+S'Thailand'
+p372
+tp373
+a(S'Chennai Metropolitan Area'
+p374
+S'India'
+p375
+tp376
+a(S'Ch\xc5\xabky\xc5\x8d Metropolitan Area'
+p377
+S'Japan'
+p378
+tp379
+a(S'Bangalore'
+p380
+S'India'
+p381
+tp382
+a(S'Hong Kong'
+p383
+S'China'
+p384
+tp385
+a(S'Wuhan'
+p386
+S'China'
+p387
+tp388
+a(S'Taipei-Keelung metropolitan area'
+p389
+S'Taiwan'
+p390
+tp391
+a(S'Lahore'
+p392
+S'Pakistan'
+p393
+tp394
+a(S'Tianjin'
+p395
+S'China'
+p396
+tp397
+a(S'Klang Valley'
+p398
+S'Malaysia'
+p399
+tp400
+a(S'Chongqing'
+p401
+S'China'
+p402
+tp403
+a(S'Hyderabad'
+p404
+S'India'
+p405
+tp406
+a(S'India'
+p407
+S'Ho Chi Minh City'
+p408
+tp409
+a(S'Vietnam'
+p410
+S'Shenyang'
+p411
+tp412
+a(S'China'
+p413
+S'Ahmedabad'
+p414
+tp415
+a(S'India'
+p416
+S'Antwerp'
+p417
+tp418
+a(S'Belgium'
+p419
+S'Athens'
+p420
+tp421
+a(S'Greece'
+p422
+S'Barcelona metropolitan area'
+p423
+tp424
+a(S'Spain'
+p425
+S'Baku'
+p426
+tp427
+a(S'Azerbaijan'
+p428
+S'Belgrade'
+p429
+tp430
+a(S'Serbia'
+p431
+S'Berlin'
+p432
+tp433
+a(S'Germany'
+p434
+S'Bremen'
+p435
+tp436
+a(S'Germany'
+p437
+S'Greater Bristol'
+p438
+tp439
+a(S'United Kingdom'
+p440
+S'Brussels-Capital Region'
+p441
+tp442
+a(S'Belgium'
+p443
+S'Bucharest metropolitan area'
+p444
+tp445
+a(S'Romania'
+p446
+S'Budapest metropolitan area'
+p447
+tp448
+a(S'Hungary'
+p449
+S'Cardiff'
+p450
+tp451
+a(S'United Kingdom'
+p452
+S'Copenhagen metropolitan area'
+p453
+tp454
+a(S'Denmark'
+p455
+S'Donetsk'
+p456
+tp457
+a(S'Ukraine'
+p458
+S'Dnipropetrovsk'
+p459
+tp460
+a(S'Ukraine'
+p461
+S'Dublin Metropolitan Area'
+p462
+tp463
+a(S'Republic of Ireland'
+p464
+S'Frankfurt/Rhine-Main Region'
+p465
+tp466
+a(S'Germany'
+p467
+S'Greater Glasgow'
+p468
+tp469
+a(S'United Kingdom'
+p470
+S'The Hague'
+p471
+tp472
+a(S'Netherlands'
+p473
+S'Hamburg Metropolitan Region'
+p474
+tp475
+a(S'Germany'
+p476
+S'Helsinki Metropolitan Area'
+p477
+tp478
+a(S'Finland'
+p479
+S'Istanbul'
+p480
+tp481
+a(S'Turkey'
+p482
+S'Katowice metropolitan area'
+p483
+tp484
+a(S'Poland'
+p485
+S'Kazan'
+p486
+tp487
+a(S'Russia'
+p488
+S'Kharkiv'
+p489
+tp490
+a(S'Ukraine'
+p491
+S'Greater Metropolitan Area of Porto'
+p492
+tp493
+a(S'Portugal'
+p494
+S'Portsmouth'
+p495
+tp496
+a(S'United Kingdom'
+p497
+S'Prague'
+p498
+tp499
+a(S'Czech Republic'
+p500
+S'Riga'
+p501
+tp502
+a(S'Latvia'
+p503
+S'Rome metropolitan area'
+p504
+tp505
+a(S'Italy'
+p506
+S'Rostov-on-Don'
+p507
+tp508
+a(S'Russia'
+p509
+S'Rotterdam'
+p510
+tp511
+a(S'Netherlands'
+p512
+S'Ruhr area'
+p513
+tp514
+a(S'Germany'
+p515
+S'Saarbr\xc3\xbccken'
+p516
+tp517
+a(S'Germany'
+p518
+S'Saint Petersburg'
+p519
+tp520
+a(S'Russia'
+p521
+S'Samara'
+p522
+tp523
+a(S'Russia'
+p524
+S'Russia'
+p525
+tp526
+a(S'Saratov'
+p527
+S'Russia'
+p528
+tp529
+a(S'Seville'
+p530
+S'Spain'
+p531
+tp532
+a(S'Sofia'
+p533
+S'Bulgaria'
+p534
+tp535
+a(S'Metropolitan Stockholm'
+p536
+S'Sweden'
+p537
+tp538
+a(S'South Yorkshire'
+p539
+S'United Kingdom'
+p540
+tp541
+a(S'Stuttgart Metropolitan Region'
+p542
+S'Germany'
+p543
+tp544
+a(S'Tbilisi'
+p545
+S'Georgia (country)'
+p546
+tp547
+a(S'Thessaloniki Metropolitan Area'
+p548
+S'Greece'
+p549
+tp550
+a(S'Turin metropolitan area'
+p551
+S'Italy'
+p552
+tp553
+a(S'Newcastle upon Tyne'
+p554
+S'United Kingdom'
+p555
+tp556
+a(S'Ufa'
+p557
+S'Russia'
+p558
+tp559
+a(S'Valencia (city in Spain)'
+p560
+S'Spain'
+p561
+tp562
+a(S'Vienna'
+p563
+S'Austria'
+p564
+tp565
+a(S'Volgograd'
+p566
+S'Russia'
+p567
+tp568
+a(S'Warsaw metropolitan area'
+p569
+S'Poland'
+p570
+tp571
+a(S'West Midlands conurbation'
+p572
+S'United Kingdom'
+p573
+tp574
+a(S'Yerevan'
+p575
+S'Armenia'
+p576
+tp577
+a(S'Zagreb'
+p578
+S'Croatia'
+p579
+tp580
+a(S'Z\xc3\xbcrich metropolitan area'
+p581
+S'Switzerland'
+p582
+tp583
+a.

@@ -1,0 +1,6 @@
+import city
+
+def serialize_cities():
+    f = open('../data/cities.txt', 'r')
+    for line in f:
+        a = line.split

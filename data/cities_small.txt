@@ -1,0 +1,65 @@
+Cairo @ Egypt
+Lagos @ Nigeria
+Kinshasa @ Democratic Republic of the Congo
+Johannesburg @ South Africa
+Khartoum @ Sudan
+Mogadishu @ Somalia
+Alexandria @ Egypt
+Abidjan @ Ivory Coast
+Casablanca @ Morocco
+Cape Town @ South Africa
+Durban @ South Africa
+Accra @ Ghana
+Nairobi @ Kenya
+Kano @ Nigeria
+Ibadan @ Nigeria
+Dar es Salaam @ Tanzania
+Algiers @ Algeria
+Addis Ababa @ Ethiopia
+Luanda @ Angola
+Dakar @ Senegal
+Pretoria @ South Africa
+Tripoli @ Libya
+Harare @ Zimbabwe
+Douala @ Cameroon
+Hargeisa @ Somaliland
+Abuja @ Nigeria
+Kampala @ Uganda
+Bamako @ Mali
+Maputo @ Mozambique
+Rabat @ Morocco
+Antananarivo @ Madagascar
+Lusaka @ Zambia
+Yaoundé @ Cameroon
+Ouagadougou @ Burkina Faso
+Conakry @ Guinea
+Kaduna @ Nigeria
+Kumasi @ Ghana
+Lubumbashi @ Democratic Republic of the Congo
+Mbuji-Mayi @ Democratic Republic of the Congo
+Brazzaville @ Republic of the Congo
+Oran @ Algeria
+Benin @ Nigeria
+Port Harcourt @ Nigeria
+Tunis @ Tunisia
+Freetown @ Sierra Leone
+Cotonou @ Benin
+Vereeniging @ South Africa
+Fès @ Morocco
+Maiduguri @ Nigeria
+Monrovia @ Liberia
+Port Elizabeth @ South Africa
+Huambo @ Angola
+Ogbomosho @ Nigeria
+Zaria @ Nigeria
+Ndjamena @ Chad
+Greater Mexico City @ Mexico
+Greater São Paulo @ Brazil
+New York metropolitan area @ United States
+Greater Buenos Aires @ Argentina
+Los Angeles metropolitan area @ United States
+Greater Rio de Janeiro @ Brazil
+Chicago metropolitan area @ United States
+Lima Metropolitan Area @ Peru
+Metropolitan Area of Bogotá @ Colombia
+Santiago @ Chile

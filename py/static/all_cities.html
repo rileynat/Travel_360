@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body, #map-canvas {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="/static/jquery.js"></script>
+    <script>
+var map;
+function initialize() {
+  var mapOptions = {
+    zoom: 8,
+    center: new google.maps.LatLng(-34.397, 150.644),
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
+<script>
+$.get('/all_city_locations', function(data) {
+  all_cities = data.cities;
+  edges = data.edges;
+  for (var i = 0; i < all_cities.length; i+=1) {
+    var city = all_cities[i];
+    var myLatlng = new google.maps.LatLng(city.lat, city.lng);
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title:"Hello World!"
+    });
+  }
+  for ( var i = 0; i < edges.length; i++){
+    coord_a = new google.maps.LatLng(edges[i][0]['lat'], edges[i][0]['lng']);
+    coord_b = new google.maps.LatLng(edges[i][1]['lat'], edges[i][1]['lng']);
+    var path = [coord_a, coord_b];
+    var edge = new google.maps.Polyline({
+      path: path, 
+      strokeColor: '#6600FF', 
+      strokeWeight: 2
+    });
+    edge.setMap(map)
+  }
+		      
+  
+});
+
+</script>
+</html>
+

@@ -1,0 +1,183 @@
+<html>
+<head>
+
+
+<link href='//fonts.googleapis.com/css?family=Gudea:400normal,400italic,700normal|Open+Sans:400normal|Berkshire+Swash:400normal|Poiret+One:400normal|Bitter:400normal|Lato:400normal|Droid+Sans:400normal|Droid+Serif:400normal|Raleway:400normal|Oswald:400normal|Armata:400normal&subset=all' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeG-Fyfbra3L6Q7LJBcThOPpVcEzn4k7k&sensor=true"></script>
+    <script type="text/javascript" src="/static/map.js"></script>
+  <link rel="stylesheet" type="text/css" href="/static/main.css" media="screen" />
+  <link rel="stylesheet" href="/static/jquery-ui.css" />
+  
+  <script src="/static/jquery.js"></script>
+  <script src="/static/jquery-ui.js"></script>
+  
+</head>
+<body>
+
+<div class="page">
+  <center>
+  <span class='title'>Book Your Vacation ...</span>
+  </center>
+
+  <div class='searchbox'>
+    <center>
+    <br/>
+    <span class='label'>Select your vacation dates:</span>
+    <table cellspacing='10px'>
+      <tr><td class='label'>From</td><td><input class='formInput' id='dateFrom'></input></td><td class='label'>To</td><td><input id='dateTo' class='formInput'></input></td></tr>
+    </table>
+    
+    <br />
+    <span class='label'>
+    I'm in the mood for:
+    </span>
+    <div id='interests'>
+    </div>
+    
+    </center>
+
+
+  </div>
+
+  <div id='results'>
+    
+  </div>
+</div>
+
+<div id='blackback'></div>
+
+<div id='popupDiv'>
+  <div id='destinationInfo'></div>
+  <div id='map-canvas'></div>
+
+</div>
+
+
+</body>
+
+<script language='javascript'>
+
+$('#blackback').hide();
+
+$(document).keyup(function(e) {
+  if (e.keyCode == 27) {
+    $('#popupDiv').fadeOut(100);
+    $('#blackback').fadeOut(200);
+  }
+});
+
+
+$( "#dateFrom" ).datepicker();
+$( "#dateTo" ).datepicker();
+$.get('/interests', function(data) {
+  interests = data;
+  selectedInterests = [];
+  
+  //$('#interests').clear()
+  var table = $('<table width="100%">');
+  $('#interests').append(table);
+  for (var i = 0; i < interests.length; i += 1) {
+    var tr = $('<tr>');
+    table.append(tr);
+    var interest = interests[i];
+    var checkbox = $('<input type="checkbox">');
+    checkbox.attr('cat_id', interest[0]);
+    checkbox.change(function() {
+      var catId = $(this).attr('cat_id');
+      if ($(this).is(':checked')) {
+        selectedInterests.push(catId);
+      } else {
+        var index = selectedInterests.indexOf(catId);
+        if (index > -1) selectedInterests.splice(index, 1);
+      }
+      executeSearch();
+    });
+    tr.append($('<td>').append(checkbox));
+    tr.append($('<td>').html(interest[1]));
+    tr.append($('<td>').append($('<div class="slider">')));
+    $(function() {
+              $( ".slider" ).slider({
+		      value: 5, 
+		      min: 0, 
+		      max: 10, 
+		      step: .1, 
+                 });
+    });
+  }
+});
+
+function showItineraryPopup(idx) {
+  
+  $('#popupDiv').fadeIn(200);
+  $('.slider').hide();
+  switch_map(itineraries[idx].destinations);
+  $('#blackback').fadeIn(300);
+  $('#destinationInfo').empty();
+
+  for (var i = 0; i < itineraries[idx].destinations.length; i += 1) {
+    var d = itineraries[idx].destinations[i];
+    
+    $('#destinationInfo').append($('<div class="destinationInfoTitle">').html(d.city));
+    
+
+    $('#destinationInfo').append($('<div class="destinationInfoSuggestedLabel">').html('Suggested places'));
+    var picksTable = $('<table cellspacing="2">');
+    for (var j = 0; d.picks && j < d.picks.length; j += 1) {
+      var p = d.picks[j];
+      picksTable.append($('<tr>').append($('<td>').append($('<img>').attr('src', p.icon))).
+          append($('<td>').html(p.name + ' (' + p.type + ')')))
+    }
+    $('#destinationInfo').append(picksTable);
+    if (d.photo) {
+      
+    } else {
+
+    }
+  }
+
+  
+
+  // Add city by city with things to do
+}
+
+function executeSearch() {
+
+  queryString = '?categories=' + selectedInterests.join(',');
+  queryString += '&from=' + $('#dateFrom').val().replace(/\//g, '-');
+  queryString += '&to=' + $('#dateTo').val().replace(/\//g, '-');
+  $.get('/search' + queryString, function(response) {
+    itineraries = response.itineraries;
+    $('#results').empty();
+    for (var i = 0; i < response.itineraries.length; i += 1) {
+      var itinerary = response.itineraries[i];
+      
+      var resultDiv = $('<div class="result">');
+      resultDiv.attr('idx', i);
+      resultDiv.click(function() {
+        showItineraryPopup($(this).attr('idx'));
+      });
+      $('#results').append(resultDiv);
+      
+      resultDiv.append($('<div class="resultTitle">').html(itinerary.headline));
+      
+      var str = "";
+      for (var j = 0; j < itinerary.destinations.length; j += 1) {
+        if (j > 0) str += " >> ";
+        str += itinerary.destinations[j].city
+      }
+
+      resultDiv.append($('<div class="resultCities">').html(str));
+      
+    }
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', function() {
+  initialize_map();
+  $('#popupDiv').hide();
+});
+
+</script>
+
+</html>

@@ -1,0 +1,142 @@
+
+@font-face
+{
+font-family: EightOne;
+src: url(EightOne.ttf);
+}
+
+body {
+  background-color: #CAD6D9;
+  margin: 0;
+}
+
+div.page{
+  margin-left: 100px;
+  margin-right: 100px;
+  min-height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+
+}
+.slider{
+width: 100px;
+//display: none; 
+}
+span.title {
+
+  font-family: 'Gudea' !important;
+  font-size: 40px;
+}
+
+.searchbox {
+  margin-left:auto;
+  margin-right:auto;
+  width:70%;
+  height: 310px;
+  background-color:white;
+  border:1px solid;
+  border-color: #CAD6D9;
+  border-radius: 10px;
+  
+  
+}
+
+
+.formInput {
+  height: 30px;
+  font-size: 22px;
+  font-family: 'Gudea' !important;
+}
+
+.label {
+  font-family: 'Gudea' !important;
+  font-size: 22px;
+}
+
+#interests {
+  height: 150px;
+  width: 300px;
+  background-color: #CAD6D9;
+  overflow-y: scroll;
+}
+
+#results {
+  width: 70%;
+  margin-top: 10px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.resultTitle {
+  font-family: 'Gudea' !important;
+  font-size: 22px;
+}
+
+.result {
+  background-color:white;
+  border:1px solid;
+  border-color: #CAD6D9;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 4px 9px 4px 9px;
+  cursor: pointer;
+}
+
+.result:hover {
+  background-color: #6EBEC2;
+  margin-left: 10px;
+}
+
+
+.resultCities {
+  font-family: 'Gudea' !important;
+  font-size: 18px;
+
+}
+
+#popupDiv {
+  top: 100px;
+  left: 50%;
+  margin-left: -500px;
+  position: fixed;
+  width:1000;
+  height:500px;
+  background-color:white;
+}
+
+#blackback {
+  top:0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height:100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+#map-canvas {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  right:0px;
+  top:0px;
+}
+
+#destinationInfo {
+  overflow-y: scroll;
+  position: absolute;
+  left: 10px;
+  width: 980px;
+  top: 10px;
+  height: 480px;
+}
+
+.destinationInfoTitle {
+  margin-left: 4px;
+  margin-top: 8px;
+  font-family: 'Gudea' !important;
+  font-size: 22px;
+}
+
+.destinationInfoSuggestedLabel {
+  font-family: 'Gudea' !important;
+  font-weight: 100;
+}

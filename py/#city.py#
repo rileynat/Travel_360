@@ -1,0 +1,27 @@
+
+class City: 
+  """Creates a city object."""
+
+  def __init__(self, name, country): 
+    self.name = name 
+    self.country = country
+    self.region = ''
+    self.events = []
+    self.climate = None
+    self.activities = []
+    self.days = []
+
+  def AddEvent(self, event): 
+    self.events += event
+
+  def GetName(self): 
+      return self.name
+
+  def GetRegion(self): 
+      return self.region
+
+  def GetEvents(self): 
+      return self.events
+
+  def GetClimate(self): 
+      return self.climate

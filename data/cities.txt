@@ -1,0 +1,235 @@
+Cologne @ Germany
+Brunswick @ Germany
+Cambridge @ United Kingdom
+Liverpool @ United Kingdom
+Limerick @ Ireland
+Belfast @ Ireland
+Orleans @ France
+Genoa @ Italy
+Skopje @ Macedonia
+Messina @ Italy
+Verona @ Italy
+Vilnius @ Lithuania
+Moscow @ Russia
+Osaka @	Japan
+Damascus @ Syria
+Beirut @ Lebanon
+Ankara @ Turkey
+Tripoli @ Lebanon
+Amman @	Jordan
+Jerusalem @ Israel
+Tangier	  @ Morocco
+Nuremberg @ Germany
+Salzburg @ Austria
+Krakow @ Poland
+Sarajevo @ Bosnia and Herzegovina
+Tallinn @ Estonia
+Kiev @ Ukraine
+Minsk @ Belarus
+Munich @ Germany
+Oslo @ Norway
+Milan @	Italy
+Marseille @ France
+Bordeaux @ France
+Lyon @ France
+Hanover @ Germany
+Munster @ Germany
+Melbourne @ Australia
+Brisbane @ Australia
+Sydney @ Australia
+Amsterdam @ Netherlands
+Dublin @ Ireland
+Geneva @ Switzerland
+Lisbon @ Portugal
+Ann Arbor @ United States
+Cincinnati @ United States
+Vancouver @ Canada
+London @ United Kingdom
+Florence @ Italy
+Naples @ Italy
+Madrid @ Spain
+Paris @ France
+Cairo @ Egypt
+Lagos @ Nigeria
+Kinshasa @ Democratic Republic of the Congo
+Johannesburg @ South Africa
+Khartoum @ Sudan
+Mogadishu @ Somalia
+Alexandria @ Egypt
+Abidjan @ Ivory Coast
+Casablanca @ Morocco
+Cape Town @ South Africa
+Durban @ South Africa
+Accra @ Ghana
+Nairobi @ Kenya
+Kano @ Nigeria
+Ibadan @ Nigeria
+Dar es Salaam @ Tanzania
+Algiers @ Algeria
+Addis Ababa @ Ethiopia
+Luanda @ Angola
+Dakar @ Senegal
+Pretoria @ South Africa
+Tripoli @ Libya
+Harare @ Zimbabwe
+Douala @ Cameroon
+Abuja @ Nigeria
+Kampala @ Uganda
+Bamako @ Mali
+Maputo @ Mozambique
+Rabat @ Morocco
+Antananarivo @ Madagascar
+Lusaka @ Zambia
+Yaoundé @ Cameroon
+Ouagadougou @ Burkina Faso
+Conakry @ Guinea
+Kaduna @ Nigeria
+Kumasi @ Ghana
+Lubumbashi @ Democratic Republic of the Congo
+Mbuji-Mayi @ Democratic Republic of the Congo
+Brazzaville @ Republic of the Congo
+Oran @ Algeria
+Benin @ Nigeria
+Port Harcourt @ Nigeria
+Tunis @ Tunisia
+Freetown @ Sierra Leone
+Cotonou @ Benin
+Vereeniging @ South Africa
+Fès @ Morocco
+Maiduguri @ Nigeria
+Monrovia @ Liberia
+Port Elizabeth @ South Africa
+Huambo @ Angola
+Ogbomosho @ Nigeria
+Zaria @ Nigeria
+Ndjamena @ Chad
+Mexico City @ Mexico
+São Paulo @ Brazil
+New York City @ United States
+Buenos Aires @ Argentina
+Los Angeles @ United States
+Rio de Janeiro @ Brazil
+Chicago @ United States
+Lima @ Peru
+Bogotá @ Colombia
+Santiago @ Chile
+Toronto @ Canada
+Dallas @ United States
+Houston @ United States
+Delaware Valley @ United States
+Washington D.C. @ United States
+South Florida @ United States
+Belo Horizonte @ Brazil
+Atlanta @ United States
+Boston @ United States
+Guadalajara @ Mexico
+San Francisco @ United States
+Phoenix @ United States
+Guatemala City @ Guatemala
+Monterrey @ Mexico
+Porto Alegre @ Brazil
+Montreal @ Canada
+Recife @ Brazil
+Salvador @ Brazil
+Brasília @ Brazil
+Seattle @ United States
+Fortaleza @ Brazil
+Minneapolis @ United States
+Santo Domingo @ Dominican Republic
+Curitiba @ Brazil
+United States @ Mexico
+Guatemala City @ Guatemala
+Caracas @ Venezuela
+Tampa Bay @ United States
+St. Louis @ United States
+Baltimore @ United States
+Cali @ Colombia
+Guayaquil @ Ecuador
+Puebla @ Mexico
+Denver @ United States
+Campinas @ Brazil
+San Juan @ Puerto Rico
+Tokyo @ Japan
+Jakarta @ Indonesia
+Seoul @ South Korea
+Delhi @ India
+Mumbai @ India
+Manila @ Philippines
+Shanghai @ China
+Keihanshin @ Japan
+Kolkata @ India
+Karachi @ Pakistan
+Guangzhou @ China
+Dhaka @ Bangladesh
+Shenzhen @ China
+Tehran @ Iran
+Beijing @ China
+Bangkok @ Thailand
+Chennai @ India
+Chūkyō @ Japan
+Bangalore @ India
+Hong Kong @ China
+Wuhan @ China
+Taipei @ Taiwan
+Lahore @ Pakistan
+Tianjin @ China
+Klang Valley @ Malaysia
+Chongqing @ China
+Hyderabad @ India
+Ho Chi Minh City @ Vietnam
+Shenyang @ China
+Ahmedabad @ India
+Antwerp @ Belgium
+Athens @ Greece
+Barcelona @ Spain
+Baku @ Azerbaijan
+Belgrade @ Serbia
+Berlin @ Germany
+Bremen @ Germany
+Bristol @ United Kingdom
+Brussels @ Belgium
+Bucharest @ Romania
+Budapest @ Hungary
+Cardiff @ United Kingdom
+Copenhagen @ Denmark
+Donetsk @ Ukraine
+Dnipropetrovsk @ Ukraine
+Dublin @ Republic of Ireland
+Frankfurt @ Germany
+Glasgow @ United Kingdom
+The Hague @ Netherlands
+Hamburg @ Germany
+Helsinki @ Finland
+Istanbul @ Turkey
+Katowice @ Poland
+Kazan @ Russia
+Kharkiv @ Ukraine
+Porto @ Portugal
+Portsmouth @ United Kingdom
+Prague @ Czech Republic
+Riga @ Latvia
+Rome @ Italy
+Rostov-on-Don @ Russia
+Rotterdam @ Netherlands
+Ruhr @ Germany
+Saarbrücken @ Germany
+Saint Petersburg @ Russia
+Samara @ Russia
+Saratov @ Russia
+Seville @ Spain
+Sofia @ Bulgaria
+Stockholm @ Sweden
+South Yorkshire @ United Kingdom
+Stuttgart @ Germany
+Tbilisi @ Georgia
+Thessaloniki @ Greece
+Turin @ Italy
+Newcastle @ United Kingdom
+Ufa @ Russia
+Valencia @ Spain
+Vienna @ Austria
+Volgograd @ Russia
+Warsaw @ Poland
+Yerevan @ Armenia
+Zagreb @ Croatia
+Zurich @ Switzerland

@@ -1,0 +1,161 @@
+# hack.sendgrid.com  @elbuo8 
+
+import cPickle
+import urllib2
+import urllib
+import json
+import os
+import fs_api
+import json
+import urllib
+
+GEOCODE_URL = 'http://maps.googleapis.com/maps/api/geocode/json?address=' 
+CITIES_FILE = '../data/citydb.pkl'
+
+class CityDB:
+  def __init__(self, do_load=False, city_limit=None):
+    self.categories = {}  # id -> name
+    self.name2category = {}
+    self.load(do_load, city_limit)
+    
+  def read_json_at_url ( self, url ):
+    req = urllib2.Request( url )
+    response = urllib2.urlopen(req)
+    the_page = response.read()
+
+    return json.loads( the_page )
+    
+  def coordinates_from_result( self, result ):
+    geo = result['geometry']
+    location = geo['location']
+    return location
+  
+  def query_location(self, location_str ):
+    params = urllib.quote(location_str)
+    url = GEOCODE_URL + params + '&sensor=false'
+    response = self.read_json_at_url( url )
+    results = response['results']
+
+    return results
+
+  def get_coordinates(self, city, country):
+    results = self.query_location(city + ', ' + country)
+
+    if len(results) > 0:
+      lng, lat = self.coordinates_from_result( results[0] )
+    else:
+      lng, lat = [0, 0]
+
+    return lng, lat
+
+  def load(self, fetch_new=True, limit=None):
+    ''' loads cities from file (or create file if does not exist)'''
+    self.cities = []
+    self.load_categories()
+    if os.path.exists(CITIES_FILE):
+      with open(CITIES_FILE, 'r') as fin:
+        data = cPickle.load(fin)
+        self.cities = data['cities']
+        self.categories = data['categories']
+        self.name2category = {}
+        for k,v in self.categories.iteritems(): self.name2category[v] = k
+      #return
+    
+    if not fetch_new: return
+    # Otherwise, load the cities
+    i = 0
+    with open('../data/cities.txt', 'r') as fin:
+      line = fin.readline()
+      while line and (limit == None or i < limit):
+        i = i + 1
+        print i
+        line = line.rstrip()
+        city, country = line.split(' @ ')
+
+        if not self.city_in_db(city, country):
+          self.add_city_to_db(city, country)
+          self.save()
+        
+        line = fin.readline()
+
+    # Save
+    self.save()
+
+  def city_in_db(self, city, country):
+    for c in self.cities:
+      #import pdb; pdb.set_trace()
+      if city == c['city'] and country == c['country']:
+        return True
+
+    return False
+
+  def add_city_to_db(self, city, country):
+    lng, lat = self.get_coordinates(city, country)    
+    city_obj = {"city": city, "country": country, "lat": lat, "lng": lng}
+    self.cities.append(city_obj)
+        
+    city_obj["poi"] = self.get_pois(city, country)
+
+  def load_categories(self):
+    self.categories = {}
+    self.name2category = {}
+    with open('../data/printed_categories.txt', 'r') as fin:
+      line = fin.readline()
+      while line:
+        if line[0] == '\t':
+          line = fin.readline()
+          continue
+        line = line.rstrip()
+        parts = line.split(' ')
+        
+        self.categories[parts[-1]] = ' '.join(parts[0:-1])
+        self.name2category[' '.join(parts[0:-1])] = parts[-1]
+        line = fin.readline()
+  
+  def get_pois(self, city, country):
+    cat_places = {}
+#    for categoryId, categoryName in self.categories.iteritems():
+
+    # url = fs_api.url(queryDict={'near': '%s, %s' % (city, country), 'categoryId':categoryId,
+    url = fs_api.url(queryDict={'near': '%s, %s' % (city, country), 'section':'topPicks'})
+    data = json.loads( urllib.urlopen(url).read() )
+    if not 'groups' in data['response']:
+      print 'failed to load for url %s' % url
+      continue
+
+    items = data['response']['groups'][0]['items']
+#     cat_places[categoryId] = []
+    for item in items:
+      # Find the parent
+      #import pdb; pdb.set_trace()
+
+      if len(item['categories']) == 0: 
+        continue
+      #for parent in item['categories'][0]['parents']:
+      #  if parent in self.name2category:
+      #    parent_id =  self.name2category[parent]
+      #    if not parent_id in cat_places: cat_places[parent_id] = []
+
+      categoryId = item['categories'][0]['id']
+
+      cat_places[categoryId].append({
+            'name': item['name'], 'lat': item['location']['lat'],
+            'lng': item['location']['lng'],
+            'stats': item['stats'],
+          })
+      
+    for parent_id in cat_places.iterkeys():
+      cat_places[parent_id] = sorted(cat_places[parent_id], key=lambda x: -1 * x['stats']['usersCount'])
+    
+    return cat_places
+
+  def save(self):
+    ''' dumps cities to file '''
+    data = {'categories': self.categories, 'cities': self.cities}
+    with open(CITIES_FILE, 'w') as fout:
+      cPickle.dump(data, fout)
+
+
+if __name__ == '__main__':
+  city_db = CityDB()
+

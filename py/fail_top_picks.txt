@@ -1,0 +1,6 @@
+(Bremen, Germany)
+
+
+(Lima, Peru)
+https://api.foursquare.com/v2/venues/explore?client_id=2C2OMEYXHWI5LSAJ4EMLFMVYEWVOMH5B5NS50T3GB1UIT354&client_secret=QO5WJBRCUBWMRVWWNFIWHQHSFSDCQWKGFJACSJ0MEO22LSPY&near=Lima%2C%20Peru&limit=250&section=topPicks
+
